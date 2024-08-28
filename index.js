@@ -58,6 +58,7 @@ class StaticServer {
 	}
 
 	start() {
+		console.log('StaticServer start method called from forked library');
 		if( this.running ){
 			return Promise.resolve(this.origin);
 		}
